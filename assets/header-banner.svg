@@ -1,142 +1,238 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
   <defs>
     <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a0a1a"/>
-      <stop offset="60%" stop-color="#0D1117"/>
+      <stop offset="0%" stop-color="#05050f"/>
+      <stop offset="40%" stop-color="#0a0a1a"/>
       <stop offset="100%" stop-color="#0D1117"/>
     </linearGradient>
     <linearGradient id="gridColor" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FF6EC7" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#FF6EC7" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#7B68EE" stop-opacity="0.7"/>
+      <stop offset="20%" stop-color="#FF6EC7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7B68EE" stop-opacity="0.6"/>
     </linearGradient>
-    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FF6EC7"/>
-      <stop offset="100%" stop-color="#7B68EE"/>
+      <stop offset="50%" stop-color="#7B68EE"/>
+      <stop offset="100%" stop-color="#3a1a5e"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0c8d8"/>
+      <stop offset="100%" stop-color="#d4a0b8"/>
+    </linearGradient>
+    <linearGradient id="visorGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FFFF" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FF6EC7" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7B68EE" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="softGlow">
-      <feGaussianBlur stdDeviation="8"/>
+      <feGaussianBlur stdDeviation="6"/>
     </filter>
-    <clipPath id="bottomFade">
-      <rect x="0" y="0" width="1200" height="260"/>
-    </clipPath>
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
   <!-- Background sky -->
-  <rect width="1200" height="260" fill="url(#skyGrad)"/>
+  <rect width="1200" height="320" fill="url(#skyGrad)"/>
 
   <!-- Stars -->
-  <g fill="#ffffff" opacity="0.6">
-    <circle cx="80" cy="30" r="1.5"/>
-    <circle cx="200" cy="50" r="1"/>
-    <circle cx="350" cy="20" r="1.2"/>
-    <circle cx="500" cy="45" r="1"/>
-    <circle cx="680" cy="15" r="1.5"/>
-    <circle cx="820" cy="35" r="1"/>
-    <circle cx="950" cy="25" r="1.3"/>
-    <circle cx="1100" cy="40" r="1"/>
-    <circle cx="150" cy="70" r="0.8"/>
-    <circle cx="420" cy="60" r="1"/>
-    <circle cx="750" cy="55" r="0.8"/>
-    <circle cx="1050" cy="65" r="1.2"/>
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="80" cy="25" r="1.5"/><circle cx="200" cy="45" r="1"/>
+    <circle cx="350" cy="18" r="1.2"/><circle cx="500" cy="40" r="1"/>
+    <circle cx="680" cy="12" r="1.5"/><circle cx="820" cy="30" r="1"/>
+    <circle cx="950" cy="22" r="1.3"/><circle cx="1100" cy="38" r="1"/>
+    <circle cx="150" cy="65" r="0.8"/><circle cx="420" cy="55" r="1"/>
+    <circle cx="750" cy="50" r="0.8"/><circle cx="1050" cy="60" r="1.2"/>
+    <circle cx="50" cy="80" r="0.7"/><circle cx="300" cy="70" r="0.9"/>
+    <circle cx="900" cy="15" r="1.1"/><circle cx="1150" cy="50" r="0.8"/>
   </g>
 
-  <!-- Neon sun/moon -->
-  <circle cx="600" cy="100" r="50" fill="url(#sunGrad)" opacity="0.2" filter="url(#softGlow)"/>
-  <circle cx="600" cy="100" r="35" fill="none" stroke="#FF6EC7" stroke-width="1.5" opacity="0.6"/>
-  <circle cx="600" cy="100" r="28" fill="none" stroke="#7B68EE" stroke-width="1" opacity="0.4"/>
-  <!-- Horizontal lines through sun -->
-  <g stroke="#0D1117" stroke-width="3">
-    <line x1="565" y1="90" x2="635" y2="90"/>
-    <line x1="568" y1="100" x2="632" y2="100"/>
-    <line x1="572" y1="110" x2="628" y2="110"/>
-    <line x1="578" y1="120" x2="622" y2="120"/>
+  <!-- Neon sun -->
+  <circle cx="600" cy="95" r="55" fill="#FF6EC7" opacity="0.08" filter="url(#softGlow)"/>
+  <circle cx="600" cy="95" r="38" fill="none" stroke="#FF6EC7" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="600" cy="95" r="30" fill="none" stroke="#7B68EE" stroke-width="1" opacity="0.3"/>
+  <!-- Sun horizontal slice lines -->
+  <g stroke="#05050f" stroke-width="3">
+    <line x1="562" y1="85" x2="638" y2="85"/>
+    <line x1="565" y1="95" x2="635" y2="95"/>
+    <line x1="570" y1="105" x2="630" y2="105"/>
+    <line x1="576" y1="115" x2="624" y2="115"/>
   </g>
 
-  <!-- Horizon glow -->
-  <ellipse cx="600" cy="130" rx="600" ry="20" fill="#FF6EC7" opacity="0.08" filter="url(#softGlow)"/>
+  <!-- City silhouette LEFT -->
+  <g fill="#08080f">
+    <rect x="30" y="100" width="35" height="40"/>
+    <rect x="70" y="85" width="22" height="55"/>
+    <rect x="97" y="95" width="40" height="45"/>
+    <rect x="142" y="75" width="18" height="65"/>
+    <rect x="165" y="90" width="28" height="50"/>
+    <rect x="198" y="100" width="22" height="40"/>
+    <rect x="225" y="80" width="20" height="60"/>
+    <rect x="250" y="95" width="15" height="45"/>
+    <rect x="270" y="88" width="25" height="52"/>
+    <rect x="300" y="105" width="18" height="35"/>
+  </g>
+  <g fill="#FF6EC7" opacity="0.5">
+    <rect x="38" y="108" width="3" height="3"/><rect x="50" y="115" width="3" height="3"/>
+    <rect x="76" y="90" width="3" height="3"/><rect x="105" y="100" width="3" height="3"/>
+    <rect x="118" y="108" width="3" height="3"/><rect x="148" y="80" width="3" height="3"/>
+    <rect x="172" y="95" width="3" height="3"/><rect x="232" y="85" width="3" height="3"/>
+    <rect x="278" y="92" width="3" height="3"/>
+  </g>
+
+  <!-- City silhouette RIGHT -->
+  <g fill="#08080f">
+    <rect x="850" y="90" width="28" height="50"/>
+    <rect x="883" y="78" width="22" height="62"/>
+    <rect x="910" y="95" width="35" height="45"/>
+    <rect x="950" y="70" width="20" height="70"/>
+    <rect x="975" y="85" width="28" height="55"/>
+    <rect x="1008" y="95" width="22" height="45"/>
+    <rect x="1035" y="78" width="25" height="62"/>
+    <rect x="1065" y="90" width="32" height="50"/>
+    <rect x="1102" y="100" width="18" height="40"/>
+    <rect x="1125" y="85" width="25" height="55"/>
+    <rect x="1155" y="95" width="20" height="45"/>
+  </g>
+  <g fill="#7B68EE" opacity="0.5">
+    <rect x="858" y="95" width="3" height="3"/><rect x="870" y="102" width="3" height="3"/>
+    <rect x="890" y="82" width="3" height="3"/><rect x="920" y="100" width="3" height="3"/>
+    <rect x="956" y="75" width="3" height="3"/><rect x="982" y="90" width="3" height="3"/>
+    <rect x="1042" y="82" width="3" height="3"/><rect x="1075" y="95" width="3" height="3"/>
+    <rect x="1132" y="88" width="3" height="3"/>
+  </g>
+
+  <!-- ========== CYBERPUNK GIRL ========== -->
+  <g transform="translate(180, 40)">
+    <!-- Hair back flow -->
+    <path d="M120,20 C100,60 80,140 75,220 C72,250 68,260 60,270
+             Q90,265 110,240 C115,220 118,180 120,140
+             C130,180 135,220 138,240 Q145,265 165,270
+             C158,260 152,250 150,220 C145,140 130,60 120,20Z"
+          fill="url(#hairGrad)" opacity="0.6"/>
+
+    <!-- Body silhouette -->
+    <path d="M105,130 C100,140 92,160 88,180 C84,200 82,220 85,260
+             L140,260 C143,220 141,200 137,180
+             C133,160 125,140 120,130Z"
+          fill="url(#jacketGrad)"/>
+
+    <!-- Jacket collar neon trim -->
+    <path d="M105,130 L100,140 L105,145 L112,132" fill="none" stroke="#FF6EC7" stroke-width="1.5" filter="url(#neonGlow)"/>
+    <path d="M120,130 L125,140 L120,145 L113,132" fill="none" stroke="#FF6EC7" stroke-width="1.5" filter="url(#neonGlow)"/>
+
+    <!-- Neon strip on jacket -->
+    <line x1="112" y1="150" x2="112" y2="250" stroke="#00FFFF" stroke-width="1" opacity="0.6" filter="url(#neonGlow)"/>
+    <line x1="113" y1="150" x2="113" y2="250" stroke="#FF6EC7" stroke-width="1" opacity="0.4" filter="url(#neonGlow)"/>
+
+    <!-- Neck -->
+    <rect x="108" y="118" width="9" height="15" rx="3" fill="url(#skinGrad)"/>
+
+    <!-- Head -->
+    <ellipse cx="112" cy="95" rx="22" ry="28" fill="url(#skinGrad)"/>
+
+    <!-- Hair front -->
+    <path d="M90,85 C88,65 95,45 112,38 C129,45 136,65 134,85
+             C130,78 125,72 118,70 C115,75 108,75 105,70
+             C98,72 93,78 90,85Z"
+          fill="url(#hairGrad)"/>
+
+    <!-- Hair side strands -->
+    <path d="M90,85 C85,100 80,130 78,160 C82,155 86,140 90,120"
+          fill="url(#hairGrad)" opacity="0.8"/>
+    <path d="M134,85 C139,100 144,130 146,160 C142,155 138,140 134,120"
+          fill="url(#hairGrad)" opacity="0.8"/>
+
+    <!-- Cyber visor -->
+    <path d="M88,90 C90,85 100,82 112,82 C124,82 134,85 136,90
+             C134,94 124,97 112,97 C100,97 90,94 88,90Z"
+          fill="url(#visorGrad)" opacity="0.85" filter="url(#neonGlow)"/>
+    <!-- Visor shine -->
+    <path d="M95,87 C100,85 108,84 115,85" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+
+    <!-- Eyes glow behind visor -->
+    <circle cx="104" cy="91" r="2" fill="#00FFFF" opacity="0.8" filter="url(#strongGlow)"/>
+    <circle cx="120" cy="91" r="2" fill="#00FFFF" opacity="0.8" filter="url(#strongGlow)"/>
+
+    <!-- Mouth -->
+    <path d="M108,104 Q112,107 116,104" fill="none" stroke="#d4a0b8" stroke-width="1" opacity="0.6"/>
+
+    <!-- Ear cyber implant -->
+    <circle cx="89" cy="92" r="3" fill="none" stroke="#00FFFF" stroke-width="1" filter="url(#neonGlow)"/>
+    <circle cx="89" cy="92" r="1.5" fill="#00FFFF" opacity="0.6"/>
+
+    <!-- Hair antenna / ahoge -->
+    <path d="M112,38 C115,25 120,18 125,15 C122,20 118,28 116,38"
+          fill="url(#hairGrad)"/>
+
+    <!-- Hand holding holographic element -->
+    <g transform="translate(60, 170)">
+      <path d="M0,0 C-5,8 -8,18 -5,25 C-2,28 5,28 8,25 C11,18 8,8 3,0Z"
+            fill="url(#skinGrad)" opacity="0.9"/>
+      <!-- Holographic card/object -->
+      <rect x="-15" y="-20" width="30" height="20" rx="3" fill="none" stroke="#00FFFF" stroke-width="1" opacity="0.6" filter="url(#neonGlow)"/>
+      <line x1="-10" y1="-14" x2="10" y2="-14" stroke="#FF6EC7" stroke-width="0.8" opacity="0.5"/>
+      <line x1="-10" y1="-9" x2="5" y2="-9" stroke="#7B68EE" stroke-width="0.8" opacity="0.5"/>
+      <line x1="-10" y1="-4" x2="8" y2="-4" stroke="#00FFFF" stroke-width="0.8" opacity="0.5"/>
+    </g>
+
+    <!-- Neon particles around girl -->
+    <circle cx="75" cy="100" r="2" fill="#FF6EC7" opacity="0.6" filter="url(#neonGlow)">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="80" r="1.5" fill="#00FFFF" opacity="0.5" filter="url(#neonGlow)">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="65" cy="150" r="1.5" fill="#7B68EE" opacity="0.5" filter="url(#neonGlow)">
+      <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="155" cy="140" r="2" fill="#FF6EC7" opacity="0.4" filter="url(#neonGlow)">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 
   <!-- Perspective grid -->
   <g stroke="url(#gridColor)" stroke-width="1" fill="none">
-    <!-- Horizontal lines -->
-    <line x1="0" y1="140" x2="1200" y2="140"/>
-    <line x1="0" y1="160" x2="1200" y2="160"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="175" x2="1200" y2="175"/>
+    <line x1="0" y1="195" x2="1200" y2="195"/>
     <line x1="0" y1="215" x2="1200" y2="215"/>
-    <line x1="0" y1="228" x2="1200" y2="228"/>
-    <line x1="0" y1="238" x2="1200" y2="238"/>
-    <line x1="0" y1="246" x2="1200" y2="246"/>
-    <line x1="0" y1="252" x2="1200" y2="252"/>
-    <!-- Vertical perspective lines from center -->
-    <line x1="600" y1="130" x2="0" y2="260"/>
-    <line x1="600" y1="130" x2="100" y2="260"/>
-    <line x1="600" y1="130" x2="200" y2="260"/>
-    <line x1="600" y1="130" x2="300" y2="260"/>
-    <line x1="600" y1="130" x2="400" y2="260"/>
-    <line x1="600" y1="130" x2="500" y2="260"/>
-    <line x1="600" y1="130" x2="600" y2="260"/>
-    <line x1="600" y1="130" x2="700" y2="260"/>
-    <line x1="600" y1="130" x2="800" y2="260"/>
-    <line x1="600" y1="130" x2="900" y2="260"/>
-    <line x1="600" y1="130" x2="1000" y2="260"/>
-    <line x1="600" y1="130" x2="1100" y2="260"/>
-    <line x1="600" y1="130" x2="1200" y2="260"/>
+    <line x1="0" y1="235" x2="1200" y2="235"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="263" x2="1200" y2="263"/>
+    <line x1="0" y1="273" x2="1200" y2="273"/>
+    <line x1="0" y1="281" x2="1200" y2="281"/>
+    <line x1="0" y1="287" x2="1200" y2="287"/>
+    <line x1="0" y1="292" x2="1200" y2="292"/>
+    <line x1="0" y1="296" x2="1200" y2="296"/>
+    <line x1="0" y1="299" x2="1200" y2="299"/>
+    <!-- Vertical perspective -->
+    <line x1="600" y1="160" x2="0" y2="320"/>
+    <line x1="600" y1="160" x2="100" y2="320"/>
+    <line x1="600" y1="160" x2="200" y2="320"/>
+    <line x1="600" y1="160" x2="300" y2="320"/>
+    <line x1="600" y1="160" x2="400" y2="320"/>
+    <line x1="600" y1="160" x2="500" y2="320"/>
+    <line x1="600" y1="160" x2="600" y2="320"/>
+    <line x1="600" y1="160" x2="700" y2="320"/>
+    <line x1="600" y1="160" x2="800" y2="320"/>
+    <line x1="600" y1="160" x2="900" y2="320"/>
+    <line x1="600" y1="160" x2="1000" y2="320"/>
+    <line x1="600" y1="160" x2="1100" y2="320"/>
+    <line x1="600" y1="160" x2="1200" y2="320"/>
   </g>
 
-  <!-- City silhouette left -->
-  <g fill="#0a0a1a">
-    <rect x="50" y="110" width="30" height="30"/>
-    <rect x="85" y="95" width="20" height="45"/>
-    <rect x="110" y="105" width="35" height="35"/>
-    <rect x="150" y="85" width="15" height="55"/>
-    <rect x="170" y="100" width="25" height="40"/>
-    <rect x="200" y="110" width="20" height="30"/>
-    <rect x="225" y="90" width="18" height="50"/>
-  </g>
-  <!-- City lights left -->
-  <g fill="#FF6EC7" opacity="0.6">
-    <rect x="55" y="115" width="3" height="3"/>
-    <rect x="62" y="120" width="3" height="3"/>
-    <rect x="90" y="100" width="3" height="3"/>
-    <rect x="120" y="110" width="3" height="3"/>
-    <rect x="130" y="115" width="3" height="3"/>
-    <rect x="155" y="90" width="3" height="3"/>
-    <rect x="178" y="105" width="3" height="3"/>
-    <rect x="230" y="95" width="3" height="3"/>
-  </g>
+  <!-- Horizon glow -->
+  <ellipse cx="600" cy="165" rx="600" ry="15" fill="#FF6EC7" opacity="0.06" filter="url(#softGlow)"/>
 
-  <!-- City silhouette right -->
-  <g fill="#0a0a1a">
-    <rect x="900" y="100" width="25" height="40"/>
-    <rect x="930" y="90" width="20" height="50"/>
-    <rect x="955" y="105" width="30" height="35"/>
-    <rect x="990" y="80" width="18" height="60"/>
-    <rect x="1015" y="95" width="25" height="45"/>
-    <rect x="1045" y="105" width="20" height="35"/>
-    <rect x="1070" y="88" width="22" height="52"/>
-    <rect x="1100" y="100" width="30" height="40"/>
-    <rect x="1135" y="110" width="15" height="30"/>
-  </g>
-  <!-- City lights right -->
-  <g fill="#7B68EE" opacity="0.6">
-    <rect x="905" y="105" width="3" height="3"/>
-    <rect x="915" y="110" width="3" height="3"/>
-    <rect x="935" y="95" width="3" height="3"/>
-    <rect x="960" y="110" width="3" height="3"/>
-    <rect x="995" y="85" width="3" height="3"/>
-    <rect x="1020" y="100" width="3" height="3"/>
-    <rect x="1075" y="92" width="3" height="3"/>
-    <rect x="1110" y="105" width="3" height="3"/>
-  </g>
-
-  <!-- Bottom fade to background -->
-  <rect y="240" width="1200" height="20" fill="#0D1117" opacity="0.8"/>
+  <!-- Bottom fade -->
+  <rect y="295" width="1200" height="25" fill="#0D1117"/>
 </svg>

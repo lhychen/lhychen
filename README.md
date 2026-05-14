@@ -5,22 +5,8 @@
 <!-- Cyber City Banner -->
 <img src="assets/header-banner.svg" width="100%"/>
 
-<!-- Title + Miku -->
-<table>
-  <tr>
-    <td width="65%" valign="middle">
-      <h1>
-        <img src="https://media.giphy.com/media/hfhTexoh8COJgO1nqG/giphy.gif" width="60" align="absmiddle"/>
-        <span style="color:#FF6EC7;font-size:2.5em;"> lhychen</span>
-        <img src="https://media.giphy.com/media/hfhTexoh8COJgO1nqG/giphy.gif" width="60" align="absmiddle"/>
-      </h1>
-      <h3 style="color:#7B68EE;">★ CYBER ANIME DEVELOPER ★</h3>
-    </td>
-    <td width="35%" align="center">
-      <img src="https://media.giphy.com/media/haJknJPavwgFgPcYq6/giphy.gif" width="180" style="border-radius:12px;border:2px solid #FF6EC7;"/>
-    </td>
-  </tr>
-</table>
+<h1><span style="color:#FF6EC7;font-size:2.5em;">lhychen</span></h1>
+<h3 style="color:#7B68EE;">★ CYBER ANIME DEVELOPER ★</h3>
 
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
