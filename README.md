@@ -5,9 +5,6 @@
 <!-- Cyber City Banner -->
 <img src="assets/header-banner.svg" width="100%"/>
 
-<h1><span style="color:#FF6EC7;font-size:2.5em;">lhychen</span></h1>
-<h3 style="color:#7B68EE;">★ CYBER ANIME DEVELOPER ★</h3>
-
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FF6EC7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%3E+SYSTEM://ONLINE+%F0%9F%92%BB;%3E+WELCOME+TO+MY+CYBER+SPACE+%F0%9F%92%9C;%3E+%E3%82%88%E3%82%8D%E3%81%97%E3%81%8F%E3%81%8A%E9%A1%98%E3%81%84%E3%81%97%E3%81%BE%E3%81%99%21+%F0%9F%8C%B8" alt="Typing SVG" />

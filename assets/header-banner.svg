@@ -1,175 +1,232 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="380" viewBox="0 0 1200 380">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
   <defs>
     <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#050510"/>
-      <stop offset="50%" stop-color="#0a0a1a"/>
+      <stop offset="0%" stop-color="#020208"/>
+      <stop offset="40%" stop-color="#06060f"/>
       <stop offset="100%" stop-color="#0D1117"/>
     </linearGradient>
     <linearGradient id="gridColor" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FF6EC7" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#FF6EC7" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#7B68EE" stop-opacity="0.6"/>
+      <stop offset="25%" stop-color="#FF6EC7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7B68EE" stop-opacity="0.5"/>
     </linearGradient>
-    <linearGradient id="neonBorder" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#FF6EC7"/>
+      <stop offset="50%" stop-color="#ff9ef5"/>
+      <stop offset="100%" stop-color="#7B68EE"/>
+    </linearGradient>
+    <linearGradient id="subGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FFFF"/>
       <stop offset="50%" stop-color="#7B68EE"/>
-      <stop offset="100%" stop-color="#00FFFF"/>
+      <stop offset="100%" stop-color="#FF6EC7"/>
     </linearGradient>
-    <linearGradient id="imgOverlay" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FF6EC7" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#7B68EE" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="0.7"/>
-    </linearGradient>
-    <linearGradient id="sideFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0D1117" stop-opacity="0.9"/>
-      <stop offset="30%" stop-color="#0D1117" stop-opacity="0"/>
-      <stop offset="70%" stop-color="#0D1117" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="0.9"/>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF6EC7"/>
+      <stop offset="100%" stop-color="#7B68EE"/>
     </linearGradient>
     <filter id="neonGlow">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="titleGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
     <filter id="softGlow">
-      <feGaussianBlur stdDeviation="8"/>
+      <feGaussianBlur stdDeviation="10"/>
     </filter>
-    <filter id="imgGlow">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="roundedClip">
-      <rect x="700" y="30" width="220" height="300" rx="12"/>
-    </clipPath>
-    <!-- Scanline pattern -->
-    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="2" fill="white" opacity="0.08"/>
+    <pattern id="scanlines" width="1200" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1200" height="1" fill="white" opacity="0.03"/>
     </pattern>
   </defs>
 
-  <!-- Background sky -->
-  <rect width="1200" height="380" fill="url(#skyGrad)"/>
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#skyGrad)"/>
 
   <!-- Stars -->
-  <g fill="#ffffff" opacity="0.5">
-    <circle cx="60" cy="20" r="1.5"/><circle cx="180" cy="40" r="1"/>
-    <circle cx="320" cy="15" r="1.2"/><circle cx="450" cy="35" r="1"/>
-    <circle cx="580" cy="10" r="1.5"/><circle cx="720" cy="28" r="1"/>
-    <circle cx="860" cy="18" r="1.3"/><circle cx="1000" cy="32" r="1"/>
-    <circle cx="1140" cy="22" r="1.1"/><circle cx="100" cy="55" r="0.8"/>
-    <circle cx="260" cy="48" r="1"/><circle cx="520" cy="52" r="0.8"/>
-    <circle cx="780" cy="45" r="1.2"/><circle cx="950" cy="58" r="0.7"/>
-    <circle cx="1080" cy="42" r="0.9"/><circle cx="40" cy="70" r="1"/>
-    <circle cx="400" cy="65" r="0.6"/><circle cx="660" cy="60" r="0.9"/>
+  <g fill="#ffffff" opacity="0.4">
+    <circle cx="50" cy="18" r="1.2"/><circle cx="150" cy="35" r="0.8"/>
+    <circle cx="280" cy="12" r="1.1"/><circle cx="400" cy="28" r="0.7"/>
+    <circle cx="520" cy="8" r="1.3"/><circle cx="650" cy="22" r="0.9"/>
+    <circle cx="780" cy="15" r="1"/><circle cx="900" cy="30" r="0.8"/>
+    <circle cx="1020" cy="10" r="1.2"/><circle cx="1140" cy="25" r="0.7"/>
+    <circle cx="100" cy="50" r="0.6"/><circle cx="350" cy="45" r="0.8"/>
+    <circle cx="580" cy="42" r="0.5"/><circle cx="820" cy="48" r="0.7"/>
+    <circle cx="1060" cy="38" r="0.6"/><circle cx="200" cy="62" r="0.5"/>
+    <circle cx="480" cy="55" r="0.7"/><circle cx="750" cy="58" r="0.4"/>
+    <circle cx="1000" cy="52" r="0.6"/><circle cx="1100" cy="65" r="0.5"/>
+  </g>
+
+  <!-- Matrix rain columns -->
+  <g font-family="'Fira Code', 'Cascadia Code', monospace" font-size="11" fill="#FF6EC7" opacity="0.12">
+    <text x="60" y="80">7</text><text x="60" y="100">F</text><text x="60" y="120">3</text><text x="60" y="140">A</text><text x="60" y="160">9</text>
+    <text x="180" y="60">E</text><text x="180" y="80">5</text><text x="180" y="100">B</text><text x="180" y="120">2</text>
+    <text x="300" y="90">1</text><text x="300" y="110">C</text><text x="300" y="130">8</text><text x="300" y="150">D</text>
+    <text x="420" y="70">4</text><text x="420" y="90">F</text><text x="420" y="110">6</text>
+    <text x="850" y="75">A</text><text x="850" y="95">3</text><text x="850" y="115">E</text><text x="850" y="135">7</text>
+    <text x="960" y="55">2</text><text x="960" y="75">B</text><text x="960" y="95">9</text>
+    <text x="1080" y="85">C</text><text x="1080" y="105">5</text><text x="1080" y="125">1</text><text x="1080" y="145">8</text>
+  </g>
+  <g font-family="'Fira Code', 'Cascadia Code', monospace" font-size="11" fill="#7B68EE" opacity="0.08">
+    <text x="120" y="110">D</text><text x="120" y="130">4</text><text x="120" y="150">A</text>
+    <text x="240" y="80">8</text><text x="240" y="100">F</text><text x="240" y="120">2</text><text x="240" y="140">6</text>
+    <text x="360" y="95">B</text><text x="360" y="115">1</text><text x="360" y="135">E</text>
+    <text x="900" y="65">5</text><text x="900" y="85">D</text><text x="900" y="105">3</text>
+    <text x="1020" y="90">F</text><text x="1020" y="110">7</text><text x="1020" y="130">A</text>
+    <text x="1140" y="70">9</text><text x="1140" y="90">C</text><text x="1140" y="110">2</text>
   </g>
 
   <!-- Neon sun -->
-  <circle cx="350" cy="120" r="70" fill="#FF6EC7" opacity="0.06" filter="url(#softGlow)"/>
-  <circle cx="350" cy="120" r="48" fill="none" stroke="#FF6EC7" stroke-width="2" opacity="0.35"/>
-  <circle cx="350" cy="120" r="38" fill="none" stroke="#7B68EE" stroke-width="1.5" opacity="0.25"/>
-  <g stroke="#050510" stroke-width="4">
-    <line x1="302" y1="108" x2="398" y2="108"/>
-    <line x1="305" y1="120" x2="395" y2="120"/>
-    <line x1="310" y1="132" x2="390" y2="132"/>
-    <line x1="318" y1="144" x2="382" y2="144"/>
+  <circle cx="600" cy="130" r="65" fill="url(#sunGrad)" opacity="0.07" filter="url(#softGlow)"/>
+  <circle cx="600" cy="130" r="45" fill="none" stroke="#FF6EC7" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="600" cy="130" r="36" fill="none" stroke="#7B68EE" stroke-width="1" opacity="0.2"/>
+  <g stroke="#020208" stroke-width="3.5">
+    <line x1="555" y1="118" x2="645" y2="118"/>
+    <line x1="558" y1="130" x2="642" y2="130"/>
+    <line x1="563" y1="142" x2="637" y2="142"/>
+    <line x1="572" y1="154" x2="628" y2="154"/>
   </g>
 
   <!-- City silhouette LEFT -->
-  <g fill="#08080f">
-    <rect x="20" y="100" width="40" height="60"/><rect x="65" y="80" width="25" height="80"/>
-    <rect x="95" y="95" width="45" height="65"/><rect x="145" y="70" width="20" height="90"/>
-    <rect x="170" y="85" width="30" height="75"/><rect x="205" y="100" width="25" height="60"/>
-    <rect x="235" y="75" width="22" height="85"/><rect x="262" y="90" width="18" height="70"/>
-    <rect x="285" y="80" width="28" height="80"/><rect x="318" y="105" width="20" height="55"/>
+  <g fill="#060610">
+    <rect x="15" y="140" width="45" height="50"/><rect x="65" y="120" width="28" height="70"/>
+    <rect x="98" y="135" width="50" height="55"/><rect x="153" y="105" width="22" height="85"/>
+    <rect x="180" y="125" width="35" height="65"/><rect x="220" y="140" width="28" height="50"/>
+    <rect x="253" y="110" width="25" height="80"/><rect x="283" y="130" width="20" height="60"/>
+    <rect x="308" y="118" width="32" height="72"/><rect x="345" y="145" width="22" height="45"/>
   </g>
-  <g fill="#FF6EC7" opacity="0.5">
-    <rect x="28" y="108" width="4" height="4"/><rect x="45" y="118" width="4" height="4"/>
-    <rect x="72" y="88" width="4" height="4"/><rect x="105" y="102" width="4" height="4"/>
-    <rect x="125" y="112" width="4" height="4"/><rect x="152" y="78" width="4" height="4"/>
-    <rect x="180" y="92" width="4" height="4"/><rect x="242" y="82" width="4" height="4"/>
-    <rect x="295" y="88" width="4" height="4"/>
+  <g fill="#FF6EC7" opacity="0.45">
+    <rect x="25" y="148" width="4" height="4"/><rect x="42" y="155" width="4" height="4"/>
+    <rect x="72" y="128" width="4" height="4"/><rect x="108" y="142" width="4" height="4"/>
+    <rect x="130" y="150" width="4" height="4"/><rect x="160" y="112" width="4" height="4"/>
+    <rect x="190" y="132" width="4" height="4"/><rect x="260" y="118" width="4" height="4"/>
+    <rect x="318" y="125" width="4" height="4"/>
   </g>
 
-  <!-- City silhouette RIGHT (behind image) -->
-  <g fill="#08080f">
-    <rect x="950" y="85" width="30" height="75"/><rect x="985" y="70" width="25" height="90"/>
-    <rect x="1015" y="90" width="40" height="70"/><rect x="1060" y="60" width="22" height="100"/>
-    <rect x="1087" y="78" width="30" height="82"/><rect x="1122" y="95" width="25" height="65"/>
-    <rect x="1152" y="75" width="28" height="85"/>
+  <!-- City silhouette RIGHT -->
+  <g fill="#060610">
+    <rect x="820" y="120" width="32" height="70"/><rect x="857" y="105" width="28" height="85"/>
+    <rect x="890" y="130" width="42" height="60"/><rect x="937" y="95" width="24" height="95"/>
+    <rect x="966" y="115" width="32" height="75"/><rect x="1003" y="130" width="28" height="60"/>
+    <rect x="1036" y="108" width="30" height="82"/><rect x="1071" y="120" width="35" height="70"/>
+    <rect x="1111" y="140" width="22" height="50"/><rect x="1138" y="110" width="30" height="80"/>
+    <rect x="1173" y="128" width="27" height="62"/>
   </g>
   <g fill="#7B68EE" opacity="0.4">
-    <rect x="958" y="92" width="4" height="4"/><rect x="995" y="78" width="4" height="4"/>
-    <rect x="1025" y="98" width="4" height="4"/><rect x="1068" y="68" width="4" height="4"/>
-    <rect x="1095" y="85" width="4" height="4"/><rect x="1160" y="82" width="4" height="4"/>
-  </g>
-
-  <!-- ========== ANIME CHARACTER IMAGE ========== -->
-  <!-- Glow behind image -->
-  <rect x="688" y="18" width="244" height="324" rx="16" fill="#FF6EC7" opacity="0.08" filter="url(#imgGlow)"/>
-
-  <!-- Image container with rounded corners -->
-  <g clip-path="url(#roundedClip)">
-    <image href="assets/anime-neko-1.jpg" x="700" y="30" width="220" height="300" preserveAspectRatio="xMidYMid slice"/>
-    <!-- Cyberpunk color overlay -->
-    <rect x="700" y="30" width="220" height="300" fill="url(#imgOverlay)"/>
-    <!-- Scanline overlay -->
-    <rect x="700" y="30" width="220" height="300" fill="url(#scanlines)"/>
-  </g>
-
-  <!-- Neon border around image -->
-  <rect x="700" y="30" width="220" height="300" rx="12" fill="none" stroke="url(#neonBorder)" stroke-width="2.5" filter="url(#neonGlow)" opacity="0.8"/>
-
-  <!-- Corner accents -->
-  <g stroke="#00FFFF" stroke-width="2" filter="url(#neonGlow)" opacity="0.7">
-    <line x1="700" y1="45" x2="700" y2="55"/>
-    <line x1="700" y1="45" x2="710" y2="45"/>
-    <line x1="920" y1="45" x2="920" y2="55"/>
-    <line x1="920" y1="45" x2="910" y2="45"/>
-    <line x1="700" y1="315" x2="700" y2="305"/>
-    <line x1="700" y1="315" x2="710" y2="315"/>
-    <line x1="920" y1="315" x2="920" y2="305"/>
-    <line x1="920" y1="315" x2="910" y2="315"/>
-  </g>
-
-  <!-- Neon label under image -->
-  <text x="810" y="348" text-anchor="middle" font-family="'Fira Code', monospace" font-size="11" fill="#FF6EC7" opacity="0.7">NEKO://UNIT_01</text>
-
-  <!-- Side fade for blending -->
-  <rect x="690" y="0" width="30" height="380" fill="url(#sideFade)" opacity="0.5"/>
-  <rect x="920" y="0" width="30" height="380" fill="url(#sideFade)" opacity="0.5"/>
-
-  <!-- Perspective grid -->
-  <g stroke="url(#gridColor)" stroke-width="1" fill="none">
-    <line x1="0" y1="220" x2="1200" y2="220"/>
-    <line x1="0" y1="245" x2="1200" y2="245"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
-    <line x1="0" y1="290" x2="1200" y2="290"/>
-    <line x1="0" y1="308" x2="1200" y2="308"/>
-    <line x1="0" y1="322" x2="1200" y2="322"/>
-    <line x1="0" y1="334" x2="1200" y2="334"/>
-    <line x1="0" y1="344" x2="1200" y2="344"/>
-    <line x1="0" y1="352" x2="1200" y2="352"/>
-    <line x1="0" y1="358" x2="1200" y2="358"/>
-    <line x1="0" y1="363" x2="1200" y2="363"/>
-    <line x1="0" y1="367" x2="1200" y2="367"/>
-    <!-- Vertical perspective -->
-    <line x1="600" y1="200" x2="0" y2="380"/>
-    <line x1="600" y1="200" x2="100" y2="380"/>
-    <line x1="600" y1="200" x2="200" y2="380"/>
-    <line x1="600" y1="200" x2="300" y2="380"/>
-    <line x1="600" y1="200" x2="400" y2="380"/>
-    <line x1="600" y1="200" x2="500" y2="380"/>
-    <line x1="600" y1="200" x2="600" y2="380"/>
-    <line x1="600" y1="200" x2="700" y2="380"/>
-    <line x1="600" y1="200" x2="800" y2="380"/>
-    <line x1="600" y1="200" x2="900" y2="380"/>
-    <line x1="600" y1="200" x2="1000" y2="380"/>
-    <line x1="600" y1="200" x2="1100" y2="380"/>
-    <line x1="600" y1="200" x2="1200" y2="380"/>
+    <rect x="828" y="128" width="4" height="4"/><rect x="868" y="112" width="4" height="4"/>
+    <rect x="900" y="138" width="4" height="4"/><rect x="945" y="102" width="4" height="4"/>
+    <rect x="975" y="122" width="4" height="4"/><rect x="1045" y="115" width="4" height="4"/>
+    <rect x="1080" y="128" width="4" height="4"/><rect x="1148" y="118" width="4" height="4"/>
   </g>
 
   <!-- Horizon glow -->
-  <ellipse cx="350" cy="215" rx="350" ry="12" fill="#FF6EC7" opacity="0.06" filter="url(#softGlow)"/>
+  <ellipse cx="600" cy="190" rx="600" ry="18" fill="#FF6EC7" opacity="0.05" filter="url(#softGlow)"/>
+
+  <!-- ========== MAIN TITLE ========== -->
+  <text x="600" y="145" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="72" font-weight="bold" fill="url(#titleGrad)" filter="url(#titleGlow)">lhychen</text>
+  <!-- Title reflection -->
+  <text x="600" y="145" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="72" font-weight="bold" fill="url(#titleGrad)" opacity="0.3">lhychen</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="175" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="14" fill="url(#subGrad)" filter="url(#neonGlow)" letter-spacing="6">CYBER ANIME DEVELOPER</text>
+
+  <!-- Decorative lines around title -->
+  <line x1="320" y1="155" x2="430" y2="155" stroke="#FF6EC7" stroke-width="1" opacity="0.5" filter="url(#neonGlow)"/>
+  <line x1="770" y1="155" x2="880" y2="155" stroke="#7B68EE" stroke-width="1" opacity="0.5" filter="url(#neonGlow)"/>
+
+  <!-- Decorative dots -->
+  <circle cx="310" cy="155" r="3" fill="#FF6EC7" opacity="0.7" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="890" cy="155" r="3" fill="#7B68EE" opacity="0.7" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ========== ASCII ART DECORATION ========== -->
+  <!-- Left bracket art -->
+  <g font-family="'Fira Code', monospace" font-size="10" fill="#FF6EC7" opacity="0.25">
+    <text x="140" y="200">╔══════════════╗</text>
+    <text x="140" y="214">║  SYSTEM://OK ║</text>
+    <text x="140" y="228">╚══════════════╝</text>
+  </g>
+  <!-- Right bracket art -->
+  <g font-family="'Fira Code', monospace" font-size="10" fill="#7B68EE" opacity="0.25">
+    <text x="920" y="200">┌──────────────┐</text>
+    <text x="920" y="214">│ STATUS:ONLINE│</text>
+    <text x="920" y="228">└──────────────┘</text>
+  </g>
+
+  <!-- ========== FLOATING PARTICLES ========== -->
+  <circle cx="200" cy="180" r="2.5" fill="#FF6EC7" opacity="0.6" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="180;172;180" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="170" r="2" fill="#00FFFF" opacity="0.5" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="170;163;170" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="175" r="2.5" fill="#7B68EE" opacity="0.5" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="0.5;0.15;0.5" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="750;743;750" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="168" r="2" fill="#FF6EC7" opacity="0.4" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="168;160;168" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Data fragments -->
+  <g opacity="0.3" filter="url(#neonGlow)">
+    <rect x="170" y="240" width="16" height="10" rx="2" fill="none" stroke="#00FFFF" stroke-width="0.8">
+      <animate attributeName="opacity" values="0.3;0.08;0.3" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="240;232;240" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1010" y="235" width="14" height="8" rx="2" fill="none" stroke="#FF6EC7" stroke-width="0.8">
+      <animate attributeName="opacity" values="0.25;0.05;0.25" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="235;228;235" dur="4.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Neon divider -->
+  <line x1="100" y1="270" x2="1100" y2="270" stroke="url(#subGrad)" stroke-width="1.5" opacity="0.4" filter="url(#neonGlow)"/>
+  <!-- Divider dots -->
+  <circle cx="100" cy="270" r="3" fill="#FF6EC7" opacity="0.6" filter="url(#neonGlow)"/>
+  <circle cx="1100" cy="270" r="3" fill="#7B68EE" opacity="0.6" filter="url(#neonGlow)"/>
+
+  <!-- Perspective grid -->
+  <g stroke="url(#gridColor)" stroke-width="1" fill="none">
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="275" x2="1200" y2="275"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="0" y1="338" x2="1200" y2="338"/>
+    <line x1="0" y1="352" x2="1200" y2="352"/>
+    <line x1="0" y1="364" x2="1200" y2="364"/>
+    <line x1="0" y1="374" x2="1200" y2="374"/>
+    <line x1="0" y1="382" x2="1200" y2="382"/>
+    <line x1="0" y1="388" x2="1200" y2="388"/>
+    <line x1="0" y1="393" x2="1200" y2="393"/>
+    <!-- Vertical perspective -->
+    <line x1="600" y1="240" x2="0" y2="400"/>
+    <line x1="600" y1="240" x2="100" y2="400"/>
+    <line x1="600" y1="240" x2="200" y2="400"/>
+    <line x1="600" y1="240" x2="300" y2="400"/>
+    <line x1="600" y1="240" x2="400" y2="400"/>
+    <line x1="600" y1="240" x2="500" y2="400"/>
+    <line x1="600" y1="240" x2="600" y2="400"/>
+    <line x1="600" y1="240" x2="700" y2="400"/>
+    <line x1="600" y1="240" x2="800" y2="400"/>
+    <line x1="600" y1="240" x2="900" y2="400"/>
+    <line x1="600" y1="240" x2="1000" y2="400"/>
+    <line x1="600" y1="240" x2="1100" y2="400"/>
+    <line x1="600" y1="240" x2="1200" y2="400"/>
+  </g>
+
+  <!-- Scanline overlay -->
+  <rect width="1200" height="400" fill="url(#scanlines)"/>
 
   <!-- Bottom fade -->
-  <rect y="355" width="1200" height="25" fill="#0D1117"/>
+  <rect y="375" width="1200" height="25" fill="#0D1117"/>
 </svg>
