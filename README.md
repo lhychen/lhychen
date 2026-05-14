@@ -10,14 +10,14 @@
   <tr>
     <td width="65%" valign="middle">
       <h1>
-        <img src="https://media.giphy.com/media/3o7TKSxAxrJrGgRaEw/giphy.gif" width="60" align="absmiddle"/>
+        <img src="https://media.giphy.com/media/hfhTexoh8COJgO1nqG/giphy.gif" width="60" align="absmiddle"/>
         <span style="color:#FF6EC7;font-size:2.5em;"> lhychen</span>
-        <img src="https://media.giphy.com/media/3o7TKSxAxrJrGgRaEw/giphy.gif" width="60" align="absmiddle"/>
+        <img src="https://media.giphy.com/media/hfhTexoh8COJgO1nqG/giphy.gif" width="60" align="absmiddle"/>
       </h1>
       <h3 style="color:#7B68EE;">★ CYBER ANIME DEVELOPER ★</h3>
     </td>
     <td width="35%" align="center">
-      <img src="https://media.giphy.com/media/3o7TKSxAxrJrGgRaEw/giphy.gif" width="180" style="border-radius:12px;border:2px solid #FF6EC7;"/>
+      <img src="https://media.giphy.com/media/haJknJPavwgFgPcYq6/giphy.gif" width="180" style="border-radius:12px;border:2px solid #FF6EC7;"/>
     </td>
   </tr>
 </table>
