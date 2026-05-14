@@ -2,10 +2,25 @@
 
 <!-- ========== HEADER ========== -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,16,20,24,28&height=180&section=header&text=lhychen&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=%E2%98%85%20CYBER%20ANIME%20DEVELOPER%20%E2%98%85&descSize=18&descAlignY=55&descAlign=50" width="100%"/>
+<!-- Cyber City Banner -->
+<img src="assets/header-banner.svg" width="100%"/>
 
-<!-- Neon Grid Background -->
-<img src="assets/neon-grid.svg" width="100%"/>
+<!-- Title + Miku -->
+<table>
+  <tr>
+    <td width="65%" valign="middle">
+      <h1>
+        <img src="https://media.giphy.com/media/3o7TKSxAxrJrGgRaEw/giphy.gif" width="60" align="absmiddle"/>
+        <span style="color:#FF6EC7;font-size:2.5em;"> lhychen</span>
+        <img src="https://media.giphy.com/media/3o7TKSxAxrJrGgRaEw/giphy.gif" width="60" align="absmiddle"/>
+      </h1>
+      <h3 style="color:#7B68EE;">★ CYBER ANIME DEVELOPER ★</h3>
+    </td>
+    <td width="35%" align="center">
+      <img src="https://media.giphy.com/media/3o7TKSxAxrJrGgRaEw/giphy.gif" width="180" style="border-radius:12px;border:2px solid #FF6EC7;"/>
+    </td>
+  </tr>
+</table>
 
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
