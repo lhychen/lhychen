@@ -52,32 +52,41 @@
 
 <table align="center">
   <tr>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="130"/>
       <br/>
       <b><code>ANIME://FAVORITE</code></b>
       <br/>
-      <sub>進撃の巨人 / 鬼滅の刃 / 呪術廻戦</sub>
+      <sub>ワンピース / FAIRY TAIL</sub>
       <br/>
-      <sub>チェンソーマン / スパイファミリー</sub>
+      <sub>NARUTO -ナルト-</sub>
     </td>
-    <td align="center" width="34%">
+    <td align="center" width="25%">
       <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" width="130"/>
       <br/>
       <b><code>GAME://ONLINE</code></b>
       <br/>
-      <sub>原神 / 崩坏：星穹铁道</sub>
+      <sub>Counter-Strike 2</sub>
       <br/>
-      <sub>Minecraft / Elden Ring</sub>
+      <sub>原神 / Minecraft</sub>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="130"/>
       <br/>
       <b><code>CODE://PASSION</code></b>
       <br/>
-      <sub>算法竞赛 / 硬件设计</sub>
+      <sub>算法竞赛</sub>
       <br/>
       <sub>开源项目 / 技术探索</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://media.giphy.com/media/B2GjNzMtEVWVnLhb8r/giphy.gif" width="130"/>
+      <br/>
+      <b><code>HOBBY://ACTIVE</code></b>
+      <br/>
+      <sub>篮球 / 运动</sub>
+      <br/>
+      <sub>生活不止代码</sub>
     </td>
   </tr>
 </table>
