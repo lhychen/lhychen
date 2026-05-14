@@ -19,27 +19,15 @@
 
 <!-- ========== ABOUT ME ========== -->
 
-<table>
-  <tr>
-    <td>
-      <div align="center">
-        <img src="https://media.tenor.com/images/a5b3e8e1b1b1b1b1b1b1b1b1b1b1b1b1/tenor.gif" width="200" alt="cyberpunk"/>
-      </div>
-    </td>
-    <td>
-      <h2><img src="https://media.giphy.com/media/mGcHQ9jYPL3s5L3pM4/giphy.gif" width="40"/> <code>PROFILE://INIT</code></h2>
-      <pre>
-┌─────────────────────────────────────┐
-│  <b>> user</b>:    lhychen                 │
-│  <b>> role</b>:    Developer / Creator      │
-│  <b>> lang</b>:    Python / Verilog / Java  │
-│  <b>> shell</b>:   Windows + Git Bash      │
-│  <b>> status</b>:  <img src="https://img.shields.io/badge/ONLINE-00FF41?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABYSURBVCiRY/z//z8DMwMDAwMTE5DBQAMAM2MCVGFiYvoPVPcfqoAZmzgjAwMDAxMT03+oODbA8J+BgYHhPzMz83+oODbAwMTE9J+BgYHhPzMz83+GYRAGAGKMHd56AAAAAElFTkSuQmCC" />  │
-└─────────────────────────────────────┘
-      </pre>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+### <img src="https://media.giphy.com/media/WUlplW5QzWpaU/giphy.gif" width="30"/> `PROFILE://INIT` <img src="https://media.giphy.com/media/WUlplW5QzWpaU/giphy.gif" width="30"/>
+
+<br/>
+
+<img src="assets/profile-card.svg" width="560"/>
+
+</div>
 
 <img src="assets/neon-divider.svg" width="100%"/>
 
@@ -103,7 +91,6 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Verilog](https://img.shields.io/badge/Verilog-007396?style=for-the-badge&logo=verilog&logoColor=white)
 
 <br/>
 
