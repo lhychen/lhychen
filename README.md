@@ -4,15 +4,16 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,16,20,24,28&height=180&section=header&text=lhychen&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=%E2%98%85%20CYBER%20ANIME%20DEVELOPER%20%E2%98%85&descSize=18&descAlignY=55&descAlign=50" width="100%"/>
 
+<!-- Neon Grid Background -->
+<img src="assets/neon-grid.svg" width="100%"/>
+
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FF6EC7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%3E+SYSTEM://ONLINE+%F0%9F%92%BB;%3E+WELCOME+TO+MY+CYBER+SPACE+%F0%9F%92%9C;%3E+%E3%82%88%E3%82%8D%E3%81%97%E3%81%8F%E3%81%8A%E9%A1%98%E3%81%84%E3%81%97%E3%81%BE%E3%81%99%21+%F0%9F%8C%B8" alt="Typing SVG" />
 </a>
 
-<br/>
-
 <!-- Neon Divider -->
-<img src="https://raw.githubusercontent.com/plasticanne/plasticanne/main/assets/line-neon.gif" width="100%" height="4px"/>
+<img src="assets/neon-divider.svg" width="100%"/>
 
 </div>
 
@@ -40,7 +41,7 @@
   </tr>
 </table>
 
-<br/>
+<img src="assets/neon-divider.svg" width="100%"/>
 
 <!-- ========== INTERESTS ========== -->
 
@@ -60,7 +61,6 @@
       <sub>ワンピース / FAIRY TAIL</sub>
       <br/>
       <sub>NARUTO -ナルト-</sub>
-      <br/>
     </td>
     <td align="center" width="25%">
       <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" width="130"/>
@@ -90,7 +90,7 @@
   </tr>
 </table>
 
-<br/>
+<img src="assets/neon-divider.svg" width="100%"/>
 
 <!-- ========== TECH STACK ========== -->
 
@@ -115,7 +115,7 @@
 
 </div>
 
-<br/>
+<img src="assets/neon-divider.svg" width="100%"/>
 
 <!-- ========== GITHUB STATS ========== -->
 
@@ -136,7 +136,7 @@
 
 </div>
 
-<br/>
+<img src="assets/neon-divider.svg" width="100%"/>
 
 <!-- ========== ACTIVITY GRAPH ========== -->
 
@@ -145,8 +145,6 @@
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=lhychen&bg_color=0D1117&color=FF6EC7&line=7B68EE&point=00FFFF&area=true&area_color=FF6EC7&hide_border=true" width="95%"/>
 
 </div>
-
-<br/>
 
 <!-- ========== FOOTER ========== -->
 

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#0D1117" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gridColor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF6EC7" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#FF6EC7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7B68EE" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="200" fill="#0D1117"/>
+  <!-- Horizontal grid lines -->
+  <g stroke="url(#gridColor)" stroke-width="1" fill="none">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="165" x2="1200" y2="165"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="190" x2="1200" y2="190"/>
+    <line x1="0" y1="196" x2="1200" y2="196"/>
+  </g>
+  <!-- Vertical perspective lines -->
+  <g stroke="url(#gridColor)" stroke-width="1" fill="none">
+    <line x1="600" y1="100" x2="0" y2="200"/>
+    <line x1="600" y1="100" x2="100" y2="200"/>
+    <line x1="600" y1="100" x2="200" y2="200"/>
+    <line x1="600" y1="100" x2="300" y2="200"/>
+    <line x1="600" y1="100" x2="400" y2="200"/>
+    <line x1="600" y1="100" x2="500" y2="200"/>
+    <line x1="600" y1="100" x2="600" y2="200"/>
+    <line x1="600" y1="100" x2="700" y2="200"/>
+    <line x1="600" y1="100" x2="800" y2="200"/>
+    <line x1="600" y1="100" x2="900" y2="200"/>
+    <line x1="600" y1="100" x2="1000" y2="200"/>
+    <line x1="600" y1="100" x2="1100" y2="200"/>
+    <line x1="600" y1="100" x2="1200" y2="200"/>
+  </g>
+  <!-- Horizon glow -->
+  <ellipse cx="600" cy="110" rx="500" ry="15" fill="#FF6EC7" opacity="0.15"/>
+  <ellipse cx="600" cy="110" rx="300" ry="8" fill="#7B68EE" opacity="0.2"/>
+  <!-- Fade overlay -->
+  <rect width="1200" height="200" fill="url(#fade)"/>
+</svg>
