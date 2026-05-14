@@ -60,6 +60,7 @@
       <sub>ワンピース / FAIRY TAIL</sub>
       <br/>
       <sub>NARUTO -ナルト-</sub>
+      <br/>
     </td>
     <td align="center" width="25%">
       <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" width="130"/>
@@ -67,8 +68,6 @@
       <b><code>GAME://ONLINE</code></b>
       <br/>
       <sub>Counter-Strike 2</sub>
-      <br/>
-      <sub>原神 / Minecraft</sub>
     </td>
     <td align="center" width="25%">
       <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="130"/>
